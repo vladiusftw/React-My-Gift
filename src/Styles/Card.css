@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@keyframes updown{
+    0%,100%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(20px);
+    }
+}
+
+.content{
+    text-align: start;
+    font-size: 16px;
+    line-height: 120%;
+    color: black;
+    font-family: "Dancing Script";
+}
+
+.card-container{
+    background-color: rgb(241, 229, 229);
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px 12px black;
+    animation: 2.5s linear updown infinite;
+    width: 100%;
+    align-items: center;
+    padding: 5% 5%;
+}
+
+.cards{
+    margin-bottom: 5%;
+}
+
+@media (max-width:600px){
+    .content{
+        font-size: 12px;
+    }
+
+    .cards{
+        margin-top: 40%;
+    }
+    
+}
+
+@media (min-width:600px){
+    .content{
+        font-size: 14px;
+    }
+
+    .cards{
+        margin-top: 20%;
+    }
+}
+
+@media (min-width:900px){
+    .content{
+        font-size: 14px; 
+    }
+
+    .cards{
+        margin-top: 15%;
+    }
+}
+
+@media (min-width:1300px){
+    .content{
+        font-size: 16px;
+    }
+
+    .cards{
+        margin-top: 10%;
+    }
+}
+
+
+
+
